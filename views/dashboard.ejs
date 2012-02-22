@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="span5">
+    <h2>Find Influencers</h2>
+    <p>Some explanatory copy</p>
+  </div>
+  <div id="dashboard-result-title" class="span5">
+  </div>
+</div>
+<div class="row">
+  <div class="span5">
+    <div class="well">
+      <input default="Search by Topic" id="topic-search-input" type="text" data-provide="typeahead">
+      <img id="search-loading-img" src="/images/loading.gif">
+    </div>
+  </div>
+  <div id="topic-stats-cont" class="span5">
+  </div>
+</div>
+<script type="text/template" id="topic-stats-template">
+    <h3>{{ topic }}</h3>
+    <ul>
+      <li>Inventory : {{ kscore }} influence points</li>
+      <li>Reach per point : {{ true_reach/kscore }} individuals</li>
+      <li>CPM of ${{ kscore/influencers }}</li>
+    </ul>
+</script>
