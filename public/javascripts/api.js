@@ -12,7 +12,7 @@ API = {
     var self = this;
     $.get('http://localhost:3001/stats?topic='+escape(topic), function(res){
       setTimeout(function(){
-        return cb(topic, JSON.parse(res).data);
+        return cb(JSON.parse(res).data);
       }, 500);
     });
   }

@@ -1,0 +1,21 @@
+<div id="topic-stat-{{ topic }}" class="topic-stat row alert alert-info span10">
+  <a topic="{{ topic }}" class="close" data-dismiss="alert" href="#">&times;</a>  
+  <div class="row">
+    <div class="span3">
+      <strong>{{ topic }}</strong>
+      <ul>
+        <li>Inventory : <strong>{{ Math.ceil(kscore) }}</strong> influence points</li>
+        <li>Reach per point : <strong>{{ Math.ceil(true_reach/kscore) }}</strong> individuals</li>
+        <li>CPM of <strong>${{ Math.ceil(kscore/influencers) }}</strong></li>
+      </ul>
+    </div>
+    <div class="span2 well alert alert-info">
+      I want to <strong>spend</strong>
+      <input id="{{ topic.split(' ').join('') }}-money-input" class="order-input money-input" type="text"> dollars
+    </div>
+    <div class="span2 well alert alert-info">
+      I want to <strong>reach</strong>
+      <input id="{{ topic.split(' ').join('') }}-reach-input" class="order-input reach-input" type="text"> individuals
+    </div>
+  </div>
+</div>

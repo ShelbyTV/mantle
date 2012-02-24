@@ -1,0 +1,13 @@
+<div class="hero-unit">
+  <h2>Seeding your campaign to <%= reach %> individuals</h2>
+  <img id="seed-loader" src="/images/loading.gif" /> 
+  <a id="anal-button" href="/analytics" class="btn btn-primary btn-large pull-right">Next »</a>
+</div>
+
+<script type='text/javascript'>
+  var seedingDone = function(){
+    $('#seed-loader').hide();
+    $('#anal-button').show();
+  };
+  setTimeout(seedingDone, 2000);
+</script>
